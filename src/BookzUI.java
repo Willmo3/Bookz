@@ -3,7 +3,6 @@ import java.awt.ComponentOrientation;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -26,7 +25,7 @@ import javax.swing.border.EmptyBorder;
 public class BookzUI {
 	
 	private JLabel image;
-	private JFrame window;
+	private final JFrame window;
 
 	private static final String VERSION_TITLE = "BookzV3";
 
@@ -68,7 +67,7 @@ public class BookzUI {
 	 * @param core core JPanel to add the tree to.
 	 * @param tree JTree, as passed as a parameter to UI.
 	 */
-	private void prepareJTree(JPanel core, BookzTree tree) throws FileNotFoundException, IOException {
+	private void prepareJTree(JPanel core, BookzTree tree) throws IOException {
 		JScrollPane scrollTree = new JScrollPane(tree.getTree());
 		scrollTree.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 		scrollTree.setPreferredSize(new Dimension(200, 300));
@@ -99,9 +98,8 @@ public class BookzUI {
 	 * Sets the image in this book to the specified filename.
 	 * 
 	 * @param filename Where to find the image.
-	 * @throws IOException If the image not found.
 	 */
-	void setImage(String filename) throws IOException {
+	void setImage(String filename) {
 		try {
 			Image testImage = ImageIO.read(new File(filename)).getScaledInstance(300, 250, Image.SCALE_DEFAULT);
 			image.setIcon(new ImageIcon(testImage));

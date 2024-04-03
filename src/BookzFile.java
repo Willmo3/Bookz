@@ -33,7 +33,7 @@ public class BookzFile {
 		
 		String bookName = books.getName();
 		
-		if (!isValidFile(bookName, ".json")) {
+		if (invalidFile(bookName, ".json")) {
 			System.err.println("Invalid file: " + filename + ". Defaulting to " + DEFAULT_FILENAME);
 			books = new File(DEFAULT_FILENAME);
 			
@@ -52,14 +52,14 @@ public class BookzFile {
 	 * 
 	 * @param filename Base name of file to check
 	 * @param extension File extension to check
-	 * @return Whether the extension exists in a valid state
+	 * @return Whether the file is invalid
 	 */
-	static boolean isValidFile(String filename, String extension) {
+	static boolean invalidFile(String filename, String extension) {
 		boolean validExtension = filename.length() >= extension.length() 
 				&& filename.endsWith(extension);
 		
 		File toCheck = new File(filename);
-		return toCheck.exists() && validExtension;
+		return !toCheck.exists() || !validExtension;
 	}
 	
 	/**

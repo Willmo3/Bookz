@@ -156,7 +156,7 @@ public class BookzList {
 	static String parseImageLink(String imageLink, String defaultStr) {
 		String retVal = imageLink;
 		
-		if (!BookzFile.isValidFile(imageLink, ".jpg")) {
+		if (BookzFile.invalidFile(imageLink, ".jpg")) {
 			System.out.println("Invalid image (does it exist?): " + imageLink + " defaulting to: " + defaultStr);
 			retVal = defaultStr;
 		}

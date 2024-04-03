@@ -15,8 +15,8 @@ import java.util.TreeMap;
  *
  */
 public class BookzList {
-	private Map<String, ArrayList<Book>> booksPerAuthor;
-	private List<Book> books;
+	private final Map<String, ArrayList<Book>> booksPerAuthor;
+	private final List<Book> books;
 	private static final int DEFAULT_INT = 0;
 	private static final String DEFAULT_STRING = "Unknown";
 	private static final String EMPTY_ERROR = "Value for field %s not specified. Defaulting to %s.\n";
@@ -33,7 +33,7 @@ public class BookzList {
 	/**
 	 * File processing constructor. Takes a filename and gets the books list from that.
 	 * 
-	 * @param filename Name of file to process.
+	 * @param booksJsonFile Name of file to process.
 	 * @throws IOException If provided file cannot be read properly.
 	 */
 	BookzList(File booksJsonFile) throws IOException {
@@ -58,13 +58,13 @@ public class BookzList {
 	 * @return A map of all books per author.
 	 */
 	private Map<String, ArrayList<Book>> processBooksByAuthor(List<Book> books) {
-		Map<String, ArrayList<Book>> booksPerAuthor = new TreeMap<String, ArrayList<Book>>();
+		Map<String, ArrayList<Book>> booksPerAuthor = new TreeMap<>();
 
 		String author;
 		for (Book book : books) {
 			author = book.getAuthor();
 
-			booksPerAuthor.putIfAbsent(author, new ArrayList<Book>());
+			booksPerAuthor.putIfAbsent(author, new ArrayList<>());
 			booksPerAuthor.get(author).add(book);
 		}
 
@@ -125,7 +125,6 @@ public class BookzList {
 	/**
 	 * Parses a book from a set of bookAttributes, using values from another book as default.
 	 * Functionally, this allows a user to edit specific attributes of a book.
-	 * 
 	 * NOTE: this method assumes that the UI will prompt for all 7 values.
 	 * 
 	 * @param original Original book being edited; default values come from here.
@@ -196,7 +195,7 @@ public class BookzList {
 	private static String parseField(String toParse, String description, String defaultStr) {
 		String retVal = toParse;
 		
-		if (toParse.length() == 0) {
+		if (toParse.isEmpty()) {
 			System.out.printf(EMPTY_ERROR, description, defaultStr);
 			retVal = defaultStr;
 		}
@@ -216,7 +215,7 @@ public class BookzList {
 		try {
 			retVal = Integer.parseInt(toParse);
 		} catch (Exception e) {
-			if (toParse.length() == 0) {
+			if (toParse.isEmpty()) {
 				System.out.printf(EMPTY_ERROR, description, defaultInt);
 			} else {
 				System.out.println("Value " + toParse + " for field " + description + " not an integer. Defaulting to " + defaultInt + ".");

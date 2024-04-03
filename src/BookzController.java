@@ -1,4 +1,3 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -12,17 +11,17 @@ import java.util.List;
  */
 public class BookzController {
 
-	private BookzUI ui;
-	private BookzTree tree;
-	private BookzFile file;
-	private BookzList list;
+	private final BookzUI ui;
+	private final BookzTree tree;
+	private final BookzFile file;
+	private final BookzList list;
 	private boolean bookSelected;
 	
-	BookzController() throws FileNotFoundException, IOException {
+	BookzController() throws IOException {
 		this(BookzFile.DEFAULT_FILENAME);
 	}
 
-	BookzController(String filename) throws FileNotFoundException, IOException {
+	BookzController(String filename) throws IOException {
 		file = new BookzFile(filename);
 		list = new BookzList(file.getFile());
 		tree = new BookzTree(list, this);

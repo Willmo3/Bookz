@@ -1,9 +1,8 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class BookzMain {
 
-	public static void main(String[] args) throws FileNotFoundException, IOException {
+	public static void main(String[] args) throws IOException {
 		BookzController controller;
 		
 		if (args.length == 0) {

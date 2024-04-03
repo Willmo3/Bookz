@@ -55,17 +55,11 @@ public class BookzFile {
 	 * @return Whether the extension exists in a valid state
 	 */
 	static boolean isValidFile(String filename, String extension) {
-		boolean retVal = true;
 		boolean validExtension = filename.length() >= extension.length() 
 				&& filename.endsWith(extension);
 		
 		File toCheck = new File(filename);
-
-		if (!toCheck.exists() || !validExtension) {
-			retVal = false;
-		}
-		
-		return retVal;
+		return toCheck.exists() && validExtension;
 	}
 	
 	/**

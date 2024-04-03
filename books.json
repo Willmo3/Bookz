@@ -620,15 +620,6 @@
   "pages" : 272,
   "year" : 1928
 }, {
-  "title" : "Tales",
-  "author" : "Edgar Allan Poe",
-  "country" : "United States",
-  "imageLink" : "images/tales-and-poems-of-edgar-allan-poe.jpg",
-  "language" : "English",
-  "link" : "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
-  "pages" : 842,
-  "year" : 1950
-}, {
   "title" : "In Search of Lost Time",
   "author" : "Marcel Proust",
   "country" : "France",
@@ -898,4 +889,13 @@
   "link" : "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
   "pages" : 688,
   "year" : 1962
+}, {
+  "title" : "Tale",
+  "author" : "Edgar Allan Poe",
+  "country" : "United States",
+  "imageLink" : "images/tales-and-poems-of-edgar-allan-poe.jpg",
+  "language" : "English",
+  "link" : "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
+  "pages" : 842,
+  "year" : 1950
 } ]

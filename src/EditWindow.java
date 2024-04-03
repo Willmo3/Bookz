@@ -91,17 +91,13 @@ public class EditWindow {
 	 */
 	private JButton finishButton() {
 		JButton doneButton = new JButton("Done");
-		doneButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				for (JTextField textField : text) {
-					returnFields.add(textField.getText());
-				}
-				
-				actionButton.done();
-				containerFrame.dispose();
+		doneButton.addActionListener(arg0 -> {
+			for (JTextField textField : text) {
+				returnFields.add(textField.getText());
 			}
+
+			actionButton.done();
+			containerFrame.dispose();
 		});
 		
 		return doneButton;

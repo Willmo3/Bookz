@@ -4,13 +4,7 @@ public class BookzMain {
 
 	public static void main(String[] args) throws IOException {
 		BookzController controller;
-		
-		if (args.length == 0) {
-			controller = new BookzController();
-		} else {
-			controller = new BookzController(args[0]);
-		}
-		
+		controller = args.length == 0 ? new BookzController() : new BookzController(args[0]);
 		controller.readyUI();
 	}
 }

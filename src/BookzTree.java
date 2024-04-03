@@ -49,20 +49,16 @@ public class BookzTree {
 		tree.setRootVisible(false);
 		
 		// Add listeners to tree.
-		tree.getSelectionModel().addTreeSelectionListener(new TreeSelectionListener() {
+		tree.getSelectionModel().addTreeSelectionListener(e -> {
+			Object node = e.getPath().getLastPathComponent();
 
-			@Override
-			public void valueChanged(TreeSelectionEvent e) {
-				Object node = e.getPath().getLastPathComponent();
-
-				if (node instanceof BookNode) {
-					lastSelected = (BookNode) node;
-					controller.setBookSelected(true);
-					try {
-						controller.updateImage(lastSelected.getBook().getImageLink(), lastSelected.getBook());
-					} catch (IOException E) {
-						System.out.println(E);
-					}
+			if (node instanceof BookNode) {
+				lastSelected = (BookNode) node;
+				controller.setBookSelected(true);
+				try {
+					controller.updateImage(lastSelected.getBook().getImageLink(), lastSelected.getBook());
+				} catch (IOException E) {
+					System.out.println(E);
 				}
 			}
 		});

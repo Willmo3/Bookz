@@ -23,9 +23,9 @@ import javax.swing.JTextField;
 public class EditWindow {
 	JFrame containerFrame;
 	JPanel editPanel;
-	private List<JTextField> text;
-	private List<String> returnFields;
-	private EditButton actionButton;
+	private final List<JTextField> text;
+	private final List<String> returnFields;
+	private final EditButton actionButton;
 	
 	/**
 	 * Prepares an edit window.
@@ -41,8 +41,8 @@ public class EditWindow {
 		editPanel = new JPanel();
 		
 		editPanel.setLayout(new BoxLayout(editPanel, BoxLayout.Y_AXIS));
-		text = new ArrayList<JTextField>(); 
-		this.returnFields = new ArrayList<String>();
+		text = new ArrayList<>();
+		this.returnFields = new ArrayList<>();
 		
 		JLabel titleLabel = new JLabel(title);
 		titleLabel.setFont(new Font("Label.font", Font.BOLD, 20));
@@ -61,7 +61,7 @@ public class EditWindow {
 	
 	public void setVisible(boolean isVisible) {
 		containerFrame.setLocationRelativeTo(null);
-		containerFrame.setVisible(true);
+		containerFrame.setVisible(isVisible);
 	}
 	
 	/**
@@ -109,9 +109,5 @@ public class EditWindow {
 	
 	List<String> getReturnFields() {
 		return returnFields;
-	}
-	
-	JFrame getFrame() {
-		return containerFrame;
 	}
 }

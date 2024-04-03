@@ -494,15 +494,6 @@
   "pages" : 184,
   "year" : 1818
 }, {
-  "title" : "The Golden Notebook",
-  "author" : "Doris Lessing",
-  "country" : "United Kingdom",
-  "imageLink" : "images/the-golden-notebook.jpg",
-  "language" : "English",
-  "link" : "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
-  "pages" : 688,
-  "year" : 1962
-}, {
   "title" : "Diary of a Madman",
   "author" : "Lu Xun",
   "country" : "China",
@@ -898,4 +889,13 @@
   "link" : "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
   "pages" : 596,
   "year" : 1796
+}, {
+  "title" : "The Golden Notebook",
+  "author" : "Doris Lessing",
+  "country" : "United Kingdom",
+  "imageLink" : "images/the-golden-notebook.jpg",
+  "language" : "English",
+  "link" : "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
+  "pages" : 688,
+  "year" : 1962
 } ]

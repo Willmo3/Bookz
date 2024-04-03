@@ -20,23 +20,23 @@ import javax.swing.tree.DefaultTreeModel;
  */
 public class BookzTree {
 
-	private Map<String, ArrayList<Book>> booksPerAuthor;
-	private List<DefaultMutableTreeNode> authorNodes;
-	private BookzController controller;
+	private final Map<String, ArrayList<Book>> booksPerAuthor;
+	private final List<DefaultMutableTreeNode> authorNodes;
+	private final BookzController controller;
 	private JTree tree;
-	private DefaultTreeModel model;
+	private final DefaultTreeModel model;
 	private BookNode lastSelected;
 
 	/**
 	 * Tree constructor.
 	 * 
-	 * @param books          List of all books available
-	 * @param booksPerAuthor List of books tied to author.
+	 * @param list           List of all books available
+	 * @param controller	 Controller for this UI tree
 	 */
 	public BookzTree(BookzList list, BookzController controller) {
 		this.controller = controller;
 		this.booksPerAuthor = list.getBooksPerAuthor();
-		this.authorNodes = new ArrayList<DefaultMutableTreeNode>();
+		this.authorNodes = new ArrayList<>();
 		buildTree();
 		model = (DefaultTreeModel) tree.getModel();
 	}
@@ -140,7 +140,7 @@ public class BookzTree {
 	 * This makes the user manually select the node each time,
 	 * Reducing the amount of accidental edits.
 	 * 
-	 * @param title new title for last bookNode.
+	 * @param newBook new book for the last booknode
 	 */
 	void editBook(Book newBook) {
 		BookNode bookNode = new BookNode(newBook);
@@ -171,7 +171,7 @@ public class BookzTree {
 	 * 
 	 * @return The JTree
 	 */
-	JTree getTree() throws FileNotFoundException, IOException {
+	JTree getTree() {
 		return tree;
 	}
 }

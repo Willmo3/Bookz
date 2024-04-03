@@ -66,7 +66,7 @@ public class BookzUI {
 	 * @param core core JPanel to add the tree to.
 	 * @param tree JTree, as passed as a parameter to UI.
 	 */
-	private void prepareJTree(JPanel core, BookzTree tree) throws IOException {
+	private void prepareJTree(JPanel core, BookzTree tree) {
 		JScrollPane scrollTree = new JScrollPane(tree.getTree());
 		scrollTree.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 		scrollTree.setPreferredSize(new Dimension(200, 300));

@@ -1,0 +1,182 @@
+Albert Camus:
+	The Stranger (1942)
+Alfred Döblin:
+	Berlin Alexanderplatz (1929)
+Anton Chekhov:
+	Stories (1886)
+Astrid Lindgren:
+	Pippi Longstocking (1945)
+Charles Dickens:
+	Great Expectations (1861)
+Chinua Achebe:
+	Things Fall Apart (1958)
+D. H. Lawrence:
+	Sons and Lovers (1913)
+Dante Alighieri:
+	The Divine Comedy (1315)
+Denis Diderot:
+	Jacques the Fatalist (1796)
+Doris Lessing:
+	The Golden Notebook (1962)
+Edgar Allan Poe:
+	Tales (1950)
+Elsa Morante:
+	History (1974)
+Emily Brontë:
+	Wuthering Heights (1847)
+Ernest Hemingway:
+	The Old Man and the Sea (1952)
+Euripides:
+	Medea (431 BCE)
+Federico García Lorca:
+	Gypsy Ballads (1928)
+Fernando Pessoa:
+	The Book of Disquiet (1928)
+Franz Kafka:
+	Stories (1924)
+	The Castle (1926)
+	The Trial (1925)
+François Rabelais:
+	Gargantua and Pantagruel (1533)
+Fyodor Dostoevsky:
+	Crime and Punishment (1866)
+	The Brothers Karamazov (1880)
+	The Idiot (1869)
+	The Possessed (1872)
+Gabriel García Márquez:
+	Love in the Time of Cholera (1985)
+	One Hundred Years of Solitude (1967)
+Geoffrey Chaucer:
+	The Canterbury Tales (1450)
+George Eliot:
+	Middlemarch (1871)
+George Orwell:
+	Nineteen Eighty-Four (1949)
+Giacomo Leopardi:
+	Poems (1818)
+Giovanni Boccaccio:
+	The Decameron (1351)
+Gustave Flaubert:
+	Madame Bovary (1857)
+	Sentimental Education (1869)
+Günter Grass:
+	The Tin Drum (1959)
+Halldór Laxness:
+	Independent People (1934)
+Hans Christian Andersen:
+	Fairy tales (1836)
+Henrik Ibsen:
+	A Doll's House (1879)
+Herman Melville:
+	Moby Dick (1851)
+Homer:
+	Iliad (735 BCE)
+	Odyssey (800 BCE)
+Honoré de Balzac:
+	Le Père Goriot (1835)
+Italo Svevo:
+	Confessions of Zeno (1923)
+James Joyce:
+	Ulysses (1922)
+Jane Austen:
+	Pride and Prejudice (1813)
+Johann Wolfgang von Goethe:
+	Faust (1832)
+Jonathan Swift:
+	Gulliver's Travels (1726)
+Jorge Luis Borges:
+	Ficciones (1965)
+Joseph Conrad:
+	Nostromo (1904)
+José Saramago:
+	Blindness (1995)
+João Guimarães Rosa:
+	The Devil to Pay in the Backlands (1956)
+Juan Rulfo:
+	Pedro Páramo (1955)
+Knut Hamsun:
+	Hunger (1890)
+Kālidāsa:
+	The recognition of Shakuntala (150)
+Laurence Sterne:
+	The Life And Opinions of Tristram Shandy (1760)
+Leo Tolstoy:
+	Anna Karenina (1877)
+	The Death of Ivan Ilyich (1886)
+	War and Peace (1867)
+Louis-Ferdinand Céline:
+	Journey to the End of the Night (1932)
+Lu Xun:
+	Diary of a Madman (1918)
+Marcel Proust:
+	In Search of Lost Time (1920)
+Marguerite Yourcenar:
+	Memoirs of Hadrian (1951)
+Mark Twain:
+	The Adventures of Huckleberry Finn (1884)
+Michel de Montaigne:
+	Essays (1595)
+Miguel de Cervantes:
+	Don Quijote De La Mancha (1610)
+Murasaki Shikibu:
+	The Tale of Genji (1006)
+Naguib Mahfouz:
+	Children of Gebelawi (1959)
+Nikolai Gogol:
+	Dead Souls (1842)
+Nikos Kazantzakis:
+	Zorba the Greek (1946)
+Ovid:
+	Metamorphoses (100)
+Paul Celan:
+	Poems (1952)
+Ralph Ellison:
+	Invisible Man (1952)
+Robert Musil:
+	The Man Without Qualities (1931)
+Rumi:
+	The Masnavi (1236)
+Saadi:
+	Bostan (1257)
+Salman Rushdie:
+	Midnight's Children (1981)
+Samuel Beckett:
+	Molloy, Malone Dies, The Unnamable, the trilogy (1952)
+Sophocles:
+	Oedipus the King (430 BCE)
+Stendhal:
+	The Red and the Black (1830)
+Tayeb Salih:
+	Season of Migration to the North (1966)
+Thomas Mann:
+	Buddenbrooks (1901)
+	The Magic Mountain (1924)
+Toni Morrison:
+	Beloved (1987)
+Unknown:
+	Njál's Saga (1350)
+	One Thousand and One Nights (1200)
+	The Book Of Job (600 BCE)
+	The Epic Of Gilgamesh (1700 BCE)
+Valmiki:
+	Ramayana (450 BCE)
+Virgil:
+	The Aeneid (23 BCE)
+Virginia Woolf:
+	Mrs Dalloway (1925)
+	To the Lighthouse (1927)
+Vladimir Nabokov:
+	Lolita (1955)
+Vyasa:
+	Mahabharata (700 BCE)
+Walt Whitman:
+	Leaves of Grass (1855)
+William Faulkner:
+	Absalom, Absalom! (1936)
+	The Sound and the Fury (1929)
+William Shakespeare:
+	Hamlet (1603)
+	King Lear (1608)
+	Othello (1609)
+Yasunari Kawabata:
+	The Sound of the Mountain (1954)

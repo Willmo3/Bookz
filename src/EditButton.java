@@ -5,7 +5,7 @@ import javax.swing.JButton;
  * This code complies with the JMU honor code.
  * 
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  */
 public abstract class EditButton {
 	protected JButton button;

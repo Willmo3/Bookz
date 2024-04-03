@@ -17,7 +17,7 @@ import javax.swing.JTextField;
  * This code complies with the JMU honor code.
  *
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2022
  *
  */
 public class EditWindow {

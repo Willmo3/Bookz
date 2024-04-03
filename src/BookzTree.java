@@ -12,7 +12,7 @@ import javax.swing.tree.DefaultTreeModel;
  * This code complies with the JMU honor code.
  * 
  * @author Will Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  *
  */
 public class BookzTree {

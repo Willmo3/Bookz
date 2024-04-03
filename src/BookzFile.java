@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
  * This code complies with the JMU honor code.
  * 
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  *
  */
 public class BookzFile {
@@ -50,14 +50,14 @@ public class BookzFile {
 	/**
 	 * Checks whether a file exists and ends with the specified extension.
 	 * 
-	 * @param filename 
-	 * @param extension
-	 * @return
+	 * @param filename Base name of file to check
+	 * @param extension File extension to check
+	 * @return Whether the extension exists in a valid state
 	 */
 	static boolean isValidFile(String filename, String extension) {
 		boolean retVal = true;
 		boolean validExtension = filename.length() >= extension.length() 
-				&& filename.substring(filename.length() - extension.length()).equals(extension);
+				&& filename.endsWith(extension);
 		
 		File toCheck = new File(filename);
 

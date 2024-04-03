@@ -1,12 +1,10 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Button for editing the title of a book to the list.
  * This code complies with the JMU honor code.
  * 
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  */
 public class BookEditButton extends EditButton {
 	private static final String BUTTON_NAME = "Edit";
@@ -18,19 +16,14 @@ public class BookEditButton extends EditButton {
 
 	@Override
 	void addListener() {
-		button.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				if (!controller.isBookSelected()) {
-					new WarningFrame("Alert!", "Select book first").setVisible(true);
-				} else {
-					window = new EditWindow(BOOK_FIELDS, MENU_TITLE, BookEditButton.this);
-					window.setVisible(true);
-				}
+		button.addActionListener(arg0 -> {
+			if (!controller.isBookSelected()) {
+				new WarningFrame("Alert!", "Select book first").setVisible(true);
+			} else {
+				window = new EditWindow(BOOK_FIELDS, MENU_TITLE, BookEditButton.this);
+				window.setVisible(true);
 			}
 		});
-		
 	}
 
 	@Override

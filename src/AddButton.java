@@ -1,5 +1,3 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.List;
 
 /**
@@ -7,7 +5,7 @@ import java.util.List;
  * This code complies with the JMU honor code.
  * 
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  *
  */
 public class AddButton extends EditButton {
@@ -20,14 +18,10 @@ public class AddButton extends EditButton {
 
 	@Override
 	void addListener() {
-		button.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				window = new EditWindow(BOOK_FIELDS, "Add Book", AddButton.this);
-				window.setVisible(true);
-			}
+		button.addActionListener(arg0 -> {
+			window = new EditWindow(BOOK_FIELDS, "Add Book", AddButton.this);
+			window.setVisible(true);
 		});
-		
 	}
 
 	/**

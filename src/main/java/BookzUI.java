@@ -5,12 +5,7 @@ import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 /**
@@ -44,6 +39,7 @@ public class BookzUI {
 		core.setLayout(new BorderLayout());
 
 		// Add left scrollbar to JTree.
+
 		prepareJTree(core, tree);
 		prepareImage(core);
 		
@@ -68,7 +64,7 @@ public class BookzUI {
 	 */
 	private void prepareJTree(JPanel core, BookzTree tree) {
 		JScrollPane scrollTree = new JScrollPane(tree.getTree());
-		scrollTree.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+		// Return scrollbar to left
 		scrollTree.setPreferredSize(new Dimension(200, 300));
 		core.add(scrollTree, BorderLayout.WEST);
 	}

@@ -84,12 +84,11 @@ public class BookzController {
 	}
 
 	/**
-	 * Updates the title of the last book the tree selected.
-	 * 
-	 * @param newTitle What to set the title to.
-	 * @throws IOException 
+	 * Edit the last book modified
+	 *
+	 * @param bookAttributes Attributes of book to modify
 	 */
-	void editBook(List<String> bookAttributes) throws IOException {
+	void editBook(List<String> bookAttributes) {
 		Book lastBook = tree.getLastSelected().getBook();
 		Book newBook = BookzList.parseToEdit(lastBook, bookAttributes);
 

@@ -24,7 +24,7 @@ public class BookListReader {
 	public static List<Book> readBookList(InputStream input) throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		JsonNode tree = mapper.readTree(input);
-		List<Book> books = new ArrayList<Book>();
+		List<Book> books = new ArrayList<>();
 
 		for (JsonNode node : tree) {
 			books.add(new Book(node.get("title").asText(), node.get("author").asText(), node.get("country").asText(),

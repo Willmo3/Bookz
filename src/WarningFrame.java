@@ -13,7 +13,7 @@ import javax.swing.JLabel;
  *
  */
 public class WarningFrame {
-	private JDialog warning;
+	private final JDialog warning;
 	
 	WarningFrame(String title, String message) {
 		warning = new JDialog();

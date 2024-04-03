@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 /**
  * Button for editing the title of a book to the list.
@@ -31,7 +32,7 @@ public class BookEditButton extends EditButton {
 		try {
 			controller.editBook(window.getReturnFields());
 		} catch (Exception E) {
-			System.err.println(E.getStackTrace());
+			System.err.println(Arrays.toString(E.getStackTrace()));
 			// This should never be reached.
 		}
 	}

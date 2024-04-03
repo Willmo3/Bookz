@@ -1,12 +1,9 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import javax.swing.JTree;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
@@ -58,7 +55,7 @@ public class BookzTree {
 				try {
 					controller.updateImage(lastSelected.getBook().getImageLink(), lastSelected.getBook());
 				} catch (IOException E) {
-					System.out.println(E);
+					System.err.println(E.toString());
 				}
 			}
 		});

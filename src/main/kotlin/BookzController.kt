@@ -7,7 +7,7 @@ import java.io.IOException
  * @author William Morris
  * @version 4/3/2024
  */
-class BookzController @JvmOverloads internal constructor(filename: String = BookzFile.DEFAULT_FILENAME) {
+class BookzController internal constructor(filename: String = BookzFile.DEFAULT_FILENAME) {
     private val ui: BookzUI
     private val tree: BookzTree
     private val file = BookzFile(filename)

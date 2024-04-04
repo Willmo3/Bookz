@@ -1,5 +1,4 @@
 import java.awt.Font
-import java.awt.event.ActionEvent
 import javax.swing.*
 
 /**
@@ -20,8 +19,6 @@ class EditWindow(fields: Array<String>, title: String, private val actionButton:
      * Prepares an edit window.
      * Uses the specified title and adds textfields for all desired fields in fields array.
      *
-     * @param fields Fields to prompt user for.
-     * @param title Title of the window.
      */
     init {
         editPanel.layout = BoxLayout(editPanel, BoxLayout.Y_AXIS)

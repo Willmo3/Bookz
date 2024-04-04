@@ -60,7 +60,7 @@ class BookzController @JvmOverloads internal constructor(filename: String = Book
      *
      * @param book Book to add.
      */
-    fun addBook(book: Book) {
+    private fun addBook(book: Book) {
         list.addBook(book)
         file.writeList(list.books)
         tree.addBook(book)

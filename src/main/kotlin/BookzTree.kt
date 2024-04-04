@@ -134,4 +134,9 @@ class BookzTree(list: BookzList, private val controller: BookzController) {
 
         lastSelected = bookNode
     }
+
+    /**
+     * BookNode. Like a tree node, but it also has a book.
+     */
+    class BookNode(val book: Book) : DefaultMutableTreeNode(BookzList.formatEntry(book))
 }

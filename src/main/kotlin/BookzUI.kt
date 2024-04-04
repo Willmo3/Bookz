@@ -87,7 +87,7 @@ class BookzUI(tree: BookzTree, controller: BookzController) {
         try {
             val testImage = ImageIO.read(File(filename)).getScaledInstance(300, 250, Image.SCALE_DEFAULT)
             image!!.icon = ImageIcon(testImage)
-        } catch (E: IOException) {
+        } catch (_: IOException) {
             println("ImageLink $filename not found.")
             image!!.icon = null
         }

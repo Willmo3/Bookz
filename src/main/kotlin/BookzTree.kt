@@ -3,7 +3,6 @@ import javax.swing.JTree
 import javax.swing.event.TreeSelectionEvent
 import javax.swing.tree.DefaultMutableTreeNode
 import javax.swing.tree.DefaultTreeModel
-import javax.swing.tree.DefaultTreeSelectionModel
 
 /**
  * Represents a JTree for some books.
@@ -28,26 +27,6 @@ class BookzTree(list: BookzList, private val controller: BookzController) {
         tree = JTree(root)
         tree.isRootVisible = false
         model = tree.model as DefaultTreeModel
-
-        // Add listeners to tree.
-        tree.selectionModel.addTreeSelectionListener { e: TreeSelectionEvent ->
-            val node = e.path.lastPathComponent
-            if (node is BookNode) {
-                lastSelected = node
-                controller.isBookSelected = true
-                try {
-                    controller.updateImage(lastSelected!!.book.imageLink, lastSelected!!.book)
-                } catch (e: IOException) {
-                    System.err.println(e.toString())
-                }
-            }
-        }
-    }
-
-    private fun buildTree() {
-        // Initialized before building
-        addNodes(root)
-        tree.isRootVisible = false
 
         // Add listeners to tree.
         tree.selectionModel.addTreeSelectionListener { e: TreeSelectionEvent ->

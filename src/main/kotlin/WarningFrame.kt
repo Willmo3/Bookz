@@ -8,7 +8,7 @@ import javax.swing.JLabel
  * This code complies with the JMU honor code.
  *
  * @author William Morris
- * @version 10/6/2022
+ * @version 4/3/2024
  */
 class WarningFrame internal constructor(title: String?, message: String?) {
     private val warning = JDialog()

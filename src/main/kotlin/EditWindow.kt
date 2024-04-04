@@ -7,7 +7,7 @@ import javax.swing.*
  * This code complies with the JMU honor code.
  *
  * @author William Morris
- * @version 4/3/2022
+ * @version 4/3/2024
  */
 class EditWindow(fields: Array<String>, title: String, private val actionButton: EditButton) {
     private var containerFrame: JFrame = JFrame()

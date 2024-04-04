@@ -5,7 +5,7 @@ import javax.swing.tree.DefaultMutableTreeNode
  * This code complies with the JMU honor code.
  *
  * @author William Morris
- * @version 10/7/2022
+ * @version 4/3/2024
  */
 class BookNode(val book: Book) : DefaultMutableTreeNode(BookzList.formatEntry(book)) {
 

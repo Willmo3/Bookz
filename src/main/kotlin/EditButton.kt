@@ -7,7 +7,7 @@ import javax.swing.JButton
  * @author William Morris
  * @version 4/3/2024
  */
-abstract class EditButton(protected var controller: BookzController, buttonName: String?) {
+abstract class EditButton(protected var controller: BookzController, buttonName: String) {
     var button: JButton = JButton(buttonName)
     protected var window: EditWindow? = null
 

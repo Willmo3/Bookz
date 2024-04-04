@@ -2,8 +2,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.InputStream
 
 /**
- * Reads a book list from an InputStream and returns a list of books. This code
- * complies with the JMU honor code.
+ * Reads a book list from an InputStream and returns a list of books.
  *
  * @author William Morris
  * @version 4/3/2024

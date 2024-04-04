@@ -6,7 +6,6 @@ import java.io.IOException
 
 /**
  * Handles Book Json files.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

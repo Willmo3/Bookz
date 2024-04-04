@@ -6,7 +6,6 @@ import javax.swing.tree.DefaultTreeModel
 
 /**
  * Represents a JTree for some books.
- * This code complies with the JMU honor code.
  *
  * @author Will Morris
  * @version 4/3/2024

@@ -6,7 +6,6 @@ import kotlin.math.abs
 
 /**
  * Processes a list of books in various ways.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

@@ -4,7 +4,6 @@ import javax.swing.*
 /**
  * Modular window for editing books.
  * Should be encapsulated in editing button.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

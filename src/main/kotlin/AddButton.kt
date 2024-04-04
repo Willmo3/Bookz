@@ -1,7 +1,6 @@
 
 /**
  * Button responsible for adding new books.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

@@ -2,7 +2,6 @@ import javax.swing.JButton
 
 /**
  * Button for adding a book to the list.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

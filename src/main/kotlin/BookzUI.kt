@@ -8,8 +8,7 @@ import javax.swing.*
 import javax.swing.border.EmptyBorder
 
 /**
- * Class representing a single encapsulation of a BookzUI. This code complies
- * with the JMU honor code.
+ * Class representing a single encapsulation of a BookzUI.
  *
  * @author William Morris
  * @version 4/3/2024

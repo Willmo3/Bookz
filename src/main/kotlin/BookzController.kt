@@ -2,7 +2,6 @@ import java.io.IOException
 
 /**
  * Controller class for BookzV3. Connects UI to underlying model.
- * This code complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024

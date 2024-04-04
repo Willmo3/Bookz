@@ -1,6 +1,5 @@
 /**
  * Book class. Encapsulates data regarding books, including date, author, etc.
- * This work complies with the JMU honor code.
  *
  * @author William Morris
  * @version 4/3/2024
